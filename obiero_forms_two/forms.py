@@ -19,4 +19,4 @@ class stud_reg(forms.Form):
     gender = forms.CharField(max_length=100)
     school = forms.CharField(max_length=100)
     parent = forms.CharField(max_length=100)
-    phone_number = forms.CharField(max_length=100)
+    phone = forms.CharField(max_length=100)

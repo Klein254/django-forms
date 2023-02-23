@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Students</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "style.css" %}">
 </head>
 <body>
-<form action="" method="post">
+<form action="" method="post" class="form">
+    <h3 class="heading">Registration</h3>
     {% csrf_token %}
     {{ student_form.as_p }}
 
-    <input type="submit" name="studentbtn" value="submit">
+    <input type="submit" name="studentbtn" value="submit" class="inputs">
 
 </form>
 
@@ -18,7 +21,7 @@
     {{ gender }}
     {{ school }}
     {{ parent }}
-    {{ phone_number }}
+    {{ phone }}
 {% endif %}
 
 

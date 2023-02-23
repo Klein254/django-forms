@@ -58,7 +58,7 @@ def reg_students(request):
     gender = ''
     school = ''
     parent = ''
-    phone_number = ''
+    phone = ''
 
     student_form = stud_reg(request.POST or None)
     if student_form.is_valid():
@@ -66,14 +66,14 @@ def reg_students(request):
         gender = student_form.cleaned_data.get("gender")
         school = student_form.cleaned_data.get("school")
         parent = student_form.cleaned_data.get("parent")
-        phone_number = student_form.cleaned_data.get("phone_number")
+        phone = student_form.cleaned_data.get("phone")
 
     context = {'student_form': student_form,
                'name': name,
                'gender': gender,
                'school': school,
                'parent': parent,
-               'phone_number': phone_number,
+               'phone': phone,
                'submit_student_button': submit_student_button
                }
     return render(request, 'student.html', context)
