@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>People</title>
+</head>
+<body>
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ people_form.as_p }}
+
+    <input type="submit" name="peoplebtn" value="Create user">
+
+</form>
+
+{% if submit_people_button == "Create user" %}
+    {{ name }}
+    {{ age }}
+    {{ phone }}
+    {{ city }}
+{% endif %}
+
+
+</body>
+</html>
