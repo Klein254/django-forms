@@ -8,15 +8,15 @@
 </head>
 <body>
 <form action="" method="post" class="form">
-    <h3 class="heading">Registration</h3>
+    <h2 class="heading">Registration</h2>
     {% csrf_token %}
     {{ student_form.as_p }}
 
-    <input type="submit" name="studentbtn" value="submit" class="inputs">
+    <input type="submit" name="studentbtn" value="SIGN UP" class="inputs">
 
 </form>
 
-{% if submit_student_button == "submit" %}
+{% if submit_student_button == "SIGN UP" %}
     {{ name }}
     {{ gender }}
     {{ school }}

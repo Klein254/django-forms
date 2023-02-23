@@ -10,23 +10,25 @@ body{
     width: 35%;
     margin-left: 30%;
     height: 500px;
-    padding-top: 45px;
+    padding-top: 35px;
     border-radius: 30px;
     font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
     font-size: 18px;
     margin-top: 50px;
 }
 .inputs{
-    background-color: midnightblue;
+    background-color: darkslategrey;
     color: white;
-    border-color: midnightblue;
+    border-color: darkslategrey;
     width: 220px;
     height: 40px;
     margin-left: 12%;
+    font-size: 25px;
+    border-radius: 10px;
 }
 
 .heading{
-    margin-left: 75px;
+    margin-left: 60px;
     font-family: monospace;
     font-weight: bold;
 }
